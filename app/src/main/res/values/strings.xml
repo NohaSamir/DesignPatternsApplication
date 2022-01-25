@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Design Patterns Application</string>
+    <string name="template_method_pattern">Template Method Pattern</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_penne_alfredo">Create Penne Alfredo</string>
+    <string name="create_spaghetti_with_meatballs">Create Spaghetti With Meatballs</string>
+</resources>
