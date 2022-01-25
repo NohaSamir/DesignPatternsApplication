@@ -2,33 +2,44 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/main_screen_margin"
-        android:orientation="vertical"
-        tools:context=".behavioral.templatemethodpattern.TemplateMethodFragment">
+        android:layout_height="wrap_content">
 
-
-        <Button
-            android:id="@+id/alfredoButton"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/create_penne_alfredo" />
+            android:layout_margin="@dimen/main_screen_margin"
+            android:orientation="vertical"
+            tools:context=".behavioral.templatemethodpattern.TemplateMethodFragment">
 
-        <Button
-            android:id="@+id/spaghettiButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_between_buttons"
-            android:text="@string/create_spaghetti_with_meatballs" />
+            <TextView
+                android:id="@+id/summaryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_between_buttons"
-            tools:text="TextView"
-            android:textSize="@dimen/text_size"/>
-    </LinearLayout>
+            <Button
+                android:id="@+id/alfredoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_buttons"
+                android:text="@string/create_penne_alfredo" />
+
+            <Button
+                android:id="@+id/spaghettiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_buttons"
+                android:text="@string/create_spaghetti_with_meatballs" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_buttons"
+                android:textSize="@dimen/text_size"
+                tools:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
 </layout>

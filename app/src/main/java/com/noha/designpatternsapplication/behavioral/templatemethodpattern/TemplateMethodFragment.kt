@@ -23,14 +23,21 @@ class TemplateMethodFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.summaryTextView.text = PastaDish.getSummary()
+
         binding.alfredoButton.setOnClickListener {
             val penneAlfredo = PenneAlfredo()
-            binding.textView.text = penneAlfredo.makeRecipe()
+            onButtonClick(penneAlfredo.makeRecipe())
         }
 
         binding.spaghettiButton.setOnClickListener {
             val spaghettiMeatballs = SpaghettiMeatballs()
-            binding.textView.text = spaghettiMeatballs.makeRecipe()
+            onButtonClick(spaghettiMeatballs.makeRecipe())
         }
+    }
+
+    private fun onButtonClick(text: String) {
+        binding.textView.text = text
+        binding.summaryTextView.visibility = View.GONE
     }
 }
