@@ -16,5 +16,11 @@
             android:layout_height="wrap_content"
             android:text="@string/template_method_pattern" />
 
+        <Button
+            android:id="@+id/observerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/observer_pattern" />
+
     </LinearLayout>
 </layout>

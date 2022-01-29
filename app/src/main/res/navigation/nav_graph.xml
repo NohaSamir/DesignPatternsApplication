@@ -13,9 +13,17 @@
         <action
             android:id="@+id/action_mainFragment_to_templateMethodFragment"
             app:destination="@id/templateMethodFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_observerFragment"
+            app:destination="@id/observerFragment" />
     </fragment>
     <fragment
         android:id="@+id/templateMethodFragment"
         android:name="com.noha.designpatternsapplication.behavioral.templatemethodpattern.TemplateMethodFragment"
         android:label="TemplateMethodFragment" />
+    <fragment
+        android:id="@+id/observerFragment"
+        android:name="com.noha.designpatternsapplication.behavioral.observer.ui.ObserverFragment"
+        android:label="fragment_observer"
+        tools:layout="@layout/fragment_observer" />
 </navigation>

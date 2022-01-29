@@ -23,6 +23,10 @@ class MainFragment : Fragment() {
             findNavController().navigate(R.id.action_mainFragment_to_templateMethodFragment)
         }
 
+        binding.observerButton.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_observerFragment)
+        }
+
         return binding.root
     }
 }
