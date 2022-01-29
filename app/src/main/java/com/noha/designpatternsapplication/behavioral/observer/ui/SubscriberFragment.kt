@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.noha.designpatternsapplication.R
 import com.noha.designpatternsapplication.behavioral.observer.Observer
 import com.noha.designpatternsapplication.behavioral.observer.model.Blog
 import com.noha.designpatternsapplication.databinding.FragmentSubscriberBinding
@@ -36,7 +37,7 @@ class SubscriberFragment : Fragment(), Observer {
     }
 
     override fun update(state: Any) {
-        Toast.makeText(context, "Refresh your blog.", Toast.LENGTH_LONG).show()
+        Toast.makeText(context, getString(R.string.refresh_your_blog), Toast.LENGTH_LONG).show()
     }
 
     override fun onDestroy() {

@@ -8,4 +8,5 @@
     <string name="refresh">Refresh</string>
     <string name="observer_pattern">Observer Pattern</string>
     <string name="save">Save</string>
+    <string name="refresh_your_blog">Refresh your blog.</string>
 </resources>
